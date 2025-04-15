@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таблица с графиком</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Показатель</th>
+        <th>Текущий день</th>
+        <th>Вчера</th>
+        <th>Этот день недели</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-values="500512,480512,480512">
+        <td>Выручка, руб</td>
+        <td class="current-day">500 512</td>
+        <td>480 512</td>
+        <td>480 512</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="100521,100521,100521">
+        <td>Наличные</td>
+        <td class="current-day">100 521</td>
+        <td>100 521</td>
+        <td>100 521</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="100521,100521,100521">
+        <td>Безналичный расчет</td>
+        <td class="current-day">100 521</td>
+        <td>100 521</td>
+        <td>100 521</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="100521,100521,100521">
+        <td>Кредитные карты</td>
+        <td class="current-day">100 521</td>
+        <td>100 521</td>
+        <td>100 521</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="1300,900,900">
+        <td>Средний чек, руб.</td>
+        <td class="current-day">1 300</td>
+        <td>900</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="1200,800,800">
+        <td>Средний гость, руб.</td>
+        <td class="current-day">1 200</td>
+        <td>800</td>
+        <td>800</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="1000,1100,900">
+        <td>Удаление из чека (после оплаты), руб.</td>
+        <td class="current-day">1 000</td>
+        <td>1 100</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="1300,1300,900">
+        <td>Удаление из чека (до оплаты), руб.</td>
+        <td class="current-day">1 300</td>
+        <td>1 300</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="34,36,34">
+        <td>Количество чеков</td>
+        <td class="current-day">34</td>
+        <td>36</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+      <tr data-values="34,36,34">
+        <td>Количество гостей</td>
+        <td class="current-day">34</td>
+        <td>36</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <div class="chart-container" style="display: none;"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

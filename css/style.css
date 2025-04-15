@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-left: 3px solid #333;
+  border-right: 3px solid #333;
+  background-color: #ddd;
+}
+
+th {
+  height: 50px;
+  text-align: center;
+  background-color: #979797;
+}
+
+td {
+  padding: 14px;
+  border: 2px solid #fff;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+}
+
+/* Стили для фона ячеек в зависимости от значения процента */
+td.percent-positive {
+  background-color: #dff0d8;
+}
+
+td.percent-negative {
+  background-color: #f2dede;
+}
+
+td.percent-zero {
+  background-color: #f5f5f5;
+}
+
+/* Цвет процентов */
+.percent-positive {
+  color: #008000;
+}
+
+.percent-negative {
+  color: #ff0000;
+}
+
+.percent-zero {
+  color: #008000;
+}
+
+/* Выравнивание по правому краю для второго, третьего и четвертого столбцов */
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  text-align: right;
+}
+
+/* Светло-голубой цвет фона для столбца "Текущий день" */
+td.current-day {
+  background-color: #d9edf7;
+}
+
+/* Уменьшение ширины столбца "Вчера" */
+td:nth-child(3) {
+  width: 150px;
+}
+
+/* Бледно-красный фон для ячеек с отрицательными значениями */
+td.negative-background {
+  background-color: #f2dede;
+}
+
+/* Медиа-запросы для различных разрешений экрана */
+
+@media (max-width: 1024px) {
+  table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 10px;
+  }
+
+  .chart-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  table {
+    font-size: 8px;
+  }
+
+  .chart-container {
+    height: 150px;
+  }
+}
